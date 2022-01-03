@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather app</title>
+    </head>
+
+<body class="flex-column min-100vh"></body>
+<!--Header-->
+    <header>
+        <h1 class="p-3 bg-primary bg-gradient text-center text-white">Weather search app</h1>
+    </header>
+    <!--Main Sections-->
+    <div class="container-fluid">
+        <div class="row">
+        <div class=".col-lg-3">
+        <h2 class="fw-bold">Enter city name:</h2>
+        <form id="input-group">
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="input-Group-sizing-default">
+        <div class="d-grid gap-2 mt-2"> <!--mt stands for "margin,top"-->
+      <button type="button" class="btn btn-primary btn-lg btn-block">Search</button>      
+    </div>
+    </form>
+    </div>
+
+    <!--Need to make a box to display city we've searched for-->
+    <div class="col-lg-9 sm-1">
+        <div class="row">
+            <div class="card d-none">
+                <div class="card-body">
+                    <h3 class="city-name"></h3>
+                    <img id="weather-pic" alt="">
+                    <p id="temp"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="uv-index"></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row d-none" id=five-day>
+                <div class="col-12">
+                  <h3>5-Day Forecast</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2 m-3 bg-primary bg-gradient text-white outlook"></div>
+                <div class="col-2 m-3 bg-primary bg-gradient text-white outlook"></div>
+                <div class="col-2 m-3 bg-primary bg-gradient text-white outlook"></div>
+                <div class="col-2 m-3 bg-primary bg-gradient text-white outlook"></div>
+                <div class="col-2 m-3 bg-primary bg-gradient text-white outlook"></div>
+              </div>
+            </div>
+      
+      
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Boxes with "Big Major cities"-->
+
+
+
+
+    <!--5 boxes in a single row to show the weather for a 5 day forecast-->
+      
+
+  
+    
+    <script src="../assets/java/script.js"></script>
+</body>
+</html>
